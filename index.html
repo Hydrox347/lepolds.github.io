@@ -1,38 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>CV - Lepolds</title>
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #111;
-            color: white;
-            margin: 50px;
-        }
-        h1 { color: red; }
-        .section { margin-top: 30px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV RP - Andrew Scott</title>
+
+<style>
+:root{
+--bg:#0b0b0c;
+--card:#151516;
+--text:#f3f3f3;
+--muted:#b9b9b9;
+--accent:#ff8a00;
+--accent2:#ffb45a;
+--border:rgba(255,138,0,.22);
+}
+
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:var(--bg);
+color:var(--text);
+}
+
+.hero{
+padding:50px 20px;
+text-align:center;
+background:linear-gradient(180deg, rgba(255,138,0,.4), rgba(0,0,0,0));
+}
+
+.name{
+font-size:42px;
+font-weight:900;
+margin:0;
+}
+
+.subtitle{
+color:var(--accent2);
+font-weight:600;
+margin-top:8px;
+}
+
+.wrap{
+padding:30px 20px 60px;
+}
+
+.card{
+max-width:1000px;
+margin:auto;
+background:var(--card);
+border-radius:18px;
+padding:30px;
+border:1px solid rgba(255,255,255,.06);
+}
+
+.section{
+margin-top:25px;
+}
+
+.section h2{
+color:var(--accent2);
+font-size:14px;
+letter-spacing:2px;
+text-transform:uppercase;
+margin-bottom:12px;
+}
+
+.info-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:8px;
+color:var(--muted);
+}
+
+.info-row b{
+color:var(--text);
+}
+
+.avail{
+display:grid;
+gap:10px;
+}
+
+.slot{
+display:flex;
+justify-content:space-between;
+padding:10px 14px;
+border-radius:10px;
+border:1px solid var(--border);
+background:rgba(255,138,0,.08);
+}
+
+.tags{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.tag{
+background:rgba(255,138,0,.18);
+padding:6px 12px;
+border-radius:999px;
+font-size:13px;
+color:var(--accent2);
+font-weight:600;
+}
+
+.about{
+color:var(--muted);
+line-height:1.6;
+margin-top:10px;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+font-size:13px;
+color:rgba(255,255,255,.5);
+}
+</style>
 </head>
+
 <body>
 
-<h1>LEPOLDS</h1>
+<header class="hero">
+<h1 class="name">ANDREW SCOTT</h1>
+<p class="subtitle">Candidature – Boutique Leopolds 🛍️</p>
+</header>
 
-<p><strong>Âge :</strong> 25 ans</p>
-<p><strong>Ville :</strong> Los Santos</p>
-<p><strong>Email :</strong> lepolds@email.com</p>
+<div class="wrap">
+<div class="card">
 
 <div class="section">
-<h2>Expériences</h2>
-<ul>
-<li>Vendeur</li>
-<li>Agent de sécurité</li>
-<li>Chauffeur</li>
+<h2>Informations</h2>
+<div class="info-row"><span>Âge :</span> <b>26 ans</b></div>
+<div class="info-row"><span>Ville :</span> <b>Los Santos</b></div>
+<div class="info-row"><span>Poste :</span> <b>Vendeur / Conseiller</b></div>
+<div class="info-row"><span>Contact :</span> <b>5220771</b></div>
+</div>
+
+<div class="section">
+<h2>Expérience</h2>
+<ul style="color:var(--muted); line-height:1.6;">
+<li>Accueil et conseil client en boutique.</li>
+<li>Mise en rayon et organisation des vêtements.</li>
+<li>Gestion des stocks et réassort.</li>
+<li>Encaissement et relation client professionnelle.</li>
 </ul>
 </div>
 
 <div class="section">
+<h2>Mes disponibilités</h2>
+<div class="avail">
+<div class="slot"><span>Lundi - Jeudi</span><b>18h00 – 01h00</b></div>
+<div class="slot"><span>Vendredi</span><b>18h00 – 04h00</b></div>
+<div class="slot"><span>Samedi</span><b>11h00 – 03h00</b></div>
+<div class="slot"><span>Dimanche</span><b>11h00 – 03h00</b></div>
+</div>
+</div>
+
+<div class="section">
 <h2>Compétences</h2>
-<p>Sérieux, motivé, professionnel.</p>
+<div class="tags">
+<span class="tag">Vente</span>
+<span class="tag">Conseil client</span>
+<span class="tag">Communication</span>
+<span class="tag">Sens du style</span>
+<span class="tag">Gestion de stock</span>
+<span class="tag">Travail d'équipe</span>
+<span class="tag">Ponctualité</span>
+</div>
+</div>
+
+<div class="section">
+<h2>À propos de moi</h2>
+<div class="about">
+Je suis une personne sérieuse, motivée et professionnelle. 
+J’aime conseiller les clients et proposer des tenues adaptées à leur style. 
+Mon objectif est de représenter la boutique Leopolds avec professionnalisme et d’offrir une excellente expérience client.
+</div>
+</div>
+
+<footer>
+© 2026 CV RP – Andrew Scott
+</footer>
+
+</div>
 </div>
 
 </body>
