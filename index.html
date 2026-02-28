@@ -3,17 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV RP - Andrew Scott</title>
+<title>CV RP — Andrew Scott</title>
 
 <style>
 :root{
---bg:#0b0b0c;
---card:#151516;
---text:#f3f3f3;
---muted:#b9b9b9;
+--bg:#070708;
+--text:#f2f2f2;
+--muted:#b7b7b7;
 --accent:#ff8a00;
---accent2:#ffb45a;
---border:rgba(255,138,0,.22);
+--accent2:#ffb15a;
 }
 
 *{box-sizing:border-box}
@@ -27,36 +25,52 @@ color:var(--text);
 .hero{
 padding:50px 20px;
 text-align:center;
-background:linear-gradient(180deg, rgba(255,138,0,.4), rgba(0,0,0,0));
+background:linear-gradient(180deg, rgba(255,138,0,.5), rgba(0,0,0,0));
 }
 
 .name{
 font-size:42px;
 font-weight:900;
-margin:0;
+margin:10px 0 0 0;
 }
 
 .subtitle{
 color:var(--accent2);
 font-weight:600;
-margin-top:8px;
+margin-top:5px;
 }
 
-.wrap{
-padding:30px 20px 60px;
-}
-
-.card{
-max-width:1000px;
-margin:auto;
-background:var(--card);
+.container{
+max-width:1100px;
+margin:40px auto;
+padding:20px;
+background:#111;
 border-radius:18px;
-padding:30px;
-border:1px solid rgba(255,255,255,.06);
+box-shadow:0 30px 80px rgba(0,0,0,.6);
+display:grid;
+grid-template-columns:350px 1fr;
+gap:30px;
+}
+
+@media(max-width:900px){
+.container{grid-template-columns:1fr}
+}
+
+.photo{
+border-radius:15px;
+overflow:hidden;
+border:2px solid rgba(255,138,0,.4);
+}
+
+.photo img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
 }
 
 .section{
-margin-top:25px;
+margin-bottom:25px;
 }
 
 .section h2{
@@ -64,13 +78,13 @@ color:var(--accent2);
 font-size:14px;
 letter-spacing:2px;
 text-transform:uppercase;
-margin-bottom:12px;
+margin-bottom:10px;
 }
 
 .info-row{
 display:flex;
 justify-content:space-between;
-margin-bottom:8px;
+margin-bottom:6px;
 color:var(--muted);
 }
 
@@ -78,18 +92,13 @@ color:var(--muted);
 color:var(--text);
 }
 
-.avail{
-display:grid;
-gap:10px;
-}
-
 .slot{
 display:flex;
 justify-content:space-between;
-padding:10px 14px;
-border-radius:10px;
-border:1px solid var(--border);
-background:rgba(255,138,0,.08);
+padding:8px 12px;
+margin-bottom:8px;
+border-radius:8px;
+background:rgba(255,138,0,.15);
 }
 
 .tags{
@@ -99,7 +108,7 @@ gap:8px;
 }
 
 .tag{
-background:rgba(255,138,0,.18);
+background:rgba(255,138,0,.25);
 padding:6px 12px;
 border-radius:999px;
 font-size:13px;
@@ -110,12 +119,11 @@ font-weight:600;
 .about{
 color:var(--muted);
 line-height:1.6;
-margin-top:10px;
 }
 
 footer{
 text-align:center;
-margin-top:30px;
+margin-top:20px;
 font-size:13px;
 color:rgba(255,255,255,.5);
 }
@@ -125,39 +133,33 @@ color:rgba(255,255,255,.5);
 <body>
 
 <header class="hero">
-<h1 class="name">ANDREW SCOTT</h1>
-<p class="subtitle">Candidature – Boutique Leopolds 🛍️</p>
+<h1 class="name">Andrew Scott</h1>
+<p class="subtitle">Candidature — Boutique Leopolds 🛍️</p>
 </header>
 
-<div class="wrap">
-<div class="card">
+<div class="container">
+
+<div class="photo">
+<img src="andrew.png" alt="Andrew Scott">
+</div>
+
+<div>
 
 <div class="section">
 <h2>Informations</h2>
+<div class="info-row"><span>Nom :</span> <b>Scott</b></div>
+<div class="info-row"><span>Prénom :</span> <b>Andrew</b></div>
 <div class="info-row"><span>Âge :</span> <b>26 ans</b></div>
 <div class="info-row"><span>Ville :</span> <b>Los Santos</b></div>
-<div class="info-row"><span>Poste :</span> <b>Vendeur / Conseiller</b></div>
-<div class="info-row"><span>Contact :</span> <b>5220771</b></div>
-</div>
-
-<div class="section">
-<h2>Expérience</h2>
-<ul style="color:var(--muted); line-height:1.6;">
-<li>Accueil et conseil client en boutique.</li>
-<li>Mise en rayon et organisation des vêtements.</li>
-<li>Gestion des stocks et réassort.</li>
-<li>Encaissement et relation client professionnelle.</li>
-</ul>
+<div class="info-row"><span>Contact RP :</span> <b>5220771</b></div>
 </div>
 
 <div class="section">
 <h2>Mes disponibilités</h2>
-<div class="avail">
 <div class="slot"><span>Lundi - Jeudi</span><b>18h00 – 01h00</b></div>
 <div class="slot"><span>Vendredi</span><b>18h00 – 04h00</b></div>
 <div class="slot"><span>Samedi</span><b>11h00 – 03h00</b></div>
 <div class="slot"><span>Dimanche</span><b>11h00 – 03h00</b></div>
-</div>
 </div>
 
 <div class="section">
@@ -165,29 +167,47 @@ color:rgba(255,255,255,.5);
 <div class="tags">
 <span class="tag">Vente</span>
 <span class="tag">Conseil client</span>
-<span class="tag">Communication</span>
-<span class="tag">Sens du style</span>
+<span class="tag">Style & présentation</span>
 <span class="tag">Gestion de stock</span>
-<span class="tag">Travail d'équipe</span>
-<span class="tag">Ponctualité</span>
+<span class="tag">Organisation</span>
+<span class="tag">Esprit d'équipe</span>
 </div>
 </div>
 
 <div class="section">
 <h2>À propos de moi</h2>
 <div class="about">
-Je suis une personne sérieuse, motivée et professionnelle. 
-J’aime conseiller les clients et proposer des tenues adaptées à leur style. 
-Mon objectif est de représenter la boutique Leopolds avec professionnalisme et d’offrir une excellente expérience client.
+Je suis sérieux, motivé et passionné par la mode. 
+J’aime conseiller les clients et maintenir une boutique propre et attractive. 
+Je souhaite représenter Leopolds avec professionnalisme et contribuer à son image.
+</div>
+</div>
+
 </div>
 </div>
 
 <footer>
-© 2026 CV RP – Andrew Scott
+© 2026 — CV RP Andrew Scott
 </footer>
-
-</div>
-</div>
 
 </body>
 </html>
+🚀 Après commit
+
+Va sur :
+
+👉 https://hydrox347.github.io/lepolds.github.io/
+
+Si la photo ne s'affiche pas :
+
+C’est que le nom du fichier n’est pas exactement andrew.png.
+
+Envoie-moi la capture de la liste des fichiers et je t’adapte le src direct.
+
+Si tu veux maintenant :
+
+🔥 Effet animation au survol
+🔥 Effet glow autour de la photo
+🔥 Version encore plus luxe style marque premium
+
+On peut faire une V3 encore plus sale 😈
